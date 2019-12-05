@@ -29,7 +29,7 @@ pipeline {
                 echo "-=- execute unit tests -=-"
                 sh "mvn test"
                 junit 'target/surefire-reports/*.xml'
-                jacoco execPattern: 'target/jacoco.exec'
+                step( [ $class: 'JacocoPublisher' ] )
             }
         }
 
