@@ -25,7 +25,6 @@ pipeline {
                 echo "-=- execute unit tests -=-"
                 sh "mvn test"
                 junit 'target/surefire-reports/*.xml'
-                step( [ $class: 'JacocoPublisher' ] )
             }
         }
 
