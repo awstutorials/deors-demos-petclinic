@@ -427,7 +427,7 @@
                 <configuration>
                     <serverId>docker-hub</serverId>
                     <dockerDirectory>${project.basedir}</dockerDirectory>
-                    <imageName>${docker.image.prefix}/${project.name}</imageName>
+                    <imageName>ravisankar/petclinic</imageName>
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
                         <imageTag>latest</imageTag>
