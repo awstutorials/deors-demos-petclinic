@@ -106,12 +106,6 @@ pipeline {
             }
         }
 
-        stage('Push Docker image') {
-            steps {
-                echo "-=- push Docker image -=-"
-                sh "mvn docker:push"
-            }
-        }
     }
 
     post {
